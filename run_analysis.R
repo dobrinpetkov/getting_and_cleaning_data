@@ -1,4 +1,4 @@
-#------------------------------------READ DATASETS---------------------------------------------------
+#------------------------------------STEP 1: READ DATASETS---------------------------------------------------
 setwd("datasets")
 act_labels <- read.table("activity_labels.txt")
 features <- read.table("features.txt")
@@ -21,7 +21,8 @@ setwd("..") # train
 setwd("..") # datasets
 
 
-#------------------------------------READ DATASETS---------------------------------------------------
+#------------------------------------STEP 2 AND STEP 4: EXTRACT MEASUREMENTS ON THE MEAN AND STD----------------------------
+#---------------------------AND LABEL DATASET WITH MORE DESCRIPTIVE VARIABLES NAMES ----------------------------------------
 require(dplyr)
 
 # indexes of the columns which contain observations on the mean and on the standard deviation
@@ -38,18 +39,23 @@ col_names <- gsub("std()", "std", col_names, fixed = TRUE)
 col_names <- gsub("Acc", "Acceleration", col_names, fixed = TRUE)
 col_names <- gsub("Mag", "Magnitude", col_names, fixed = TRUE)
 col_names <- gsub("tB", "time_B", col_names, fixed = TRUE)
-col_names <- gsub("fB", "frequency_B", col_names, fixed = TRUE)
+col_names <- gsub("fB", "freq_B", col_names, fixed = TRUE)
 col_names <- gsub("tG", "time_G", col_names, fixed = TRUE)
-col_names <- gsub("fG", "frequency_G", col_names, fixed = TRUE)
+col_names <- gsub("fG", "freq_G", col_names, fixed = TRUE)
 col_names <- gsub("BodyBody", "Body", col_names, fixed = TRUE)
 
 names(m) <- col_names
 
 m$subject_id <- c(subject_train$V1, subject_test$V1) # add subject id
 m$activity <- c(y_train$V1, y_test$V1) # sdd activity
+
+#-----------------------STEP 3: ADD DESCRIPTIVE ACTIVITY NAMES------------------------------------------------
 m$activity <- act_labels[m$activity,2] # set descriptive names for the activities
 
 
+
+#--------------------------------MAKE NEW TIDY DATA SET WITH THE AVERAGE FOR EACH VARIABLE---------------------------
+#---------------------------FOR EACH ACTIVITY AND EACH SUBJECTS------------------------------------------------------
 # summarize data and write the output file
 sm <- m %>% group_by(subject_id, activity) %>% summarise_each(funs(mean)) # mean for each group of (subject_id) x (activity)
 write.table(sm, file = "output.txt", row.name = FALSE)
