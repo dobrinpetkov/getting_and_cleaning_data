@@ -60,4 +60,4 @@ m$activity <- act_labels[m$activity,2] # set descriptive names for the activitie
 sm <- m %>% group_by(subject_id, activity) %>% summarise_each(funs(mean)) # mean for each group of (subject_id) x (activity)
 write.table(sm, file = "output.txt", row.name = FALSE)
 
-write.table(names(sm), file = "codebook_var.md", row.name = FALSE)
+# write.table(names(sm), file = "codebook_var.md", row.name = FALSE)

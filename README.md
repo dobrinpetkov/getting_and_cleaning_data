@@ -13,11 +13,12 @@ The script assumes that there is folder **datasets** with the Samsung data in th
 	* train/subject_train.txt
 	* train/X_train.txt
 	* train/y_train.txt
+
 The datasets in **test/Inertial Signals/** and **train/Inertial Signals/** are not read as we do not need them for the analysis.
 
-2. Steps 2 - extracting measurements on the mean and standard deviation, merging the test and train datasets and naming the variables with more descriptive names. Here I have assumed that by 
-measurements on the mean and standard deviation for each measurement. For example, that implies that *fBodyAcc-mean()-X* is included and *fBodyAcc-meanFreq()-X* as the last one
-is *weighted* average of the frequency components.
+2. Steps 2 - extracting measurements on the mean and standard deviation, merging the test and train datasets and naming the variables with more descriptive names. 
+Here I have assumed that by measurements on the mean and standard deviation for each measurement it is meant columns that contain one of the strigns **mean()** or **std()**. 
+For example, that implies that *fBodyAcc-mean()-X* is included and *fBodyAcc-meanFreq()-X* is not as the latteris *weighted* average of the frequency components.
 
 3. Step 3 is done next which is adding descriptive activity names to name the activities in the dataset.
 
