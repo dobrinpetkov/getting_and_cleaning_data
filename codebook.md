@@ -1,210 +1,279 @@
-# Codebook for the variables in the tidy dataset
+## Codebook for the variables in the tidy dataset
 
-subject_id	- subject identifier
-	* 1...30
 
-activity	- type of activity
+1. subject_id	- subject identifier
+    * 1...30
+<br><br>
+
+2. activity	- type of activity
 	* LAYING
 	* SITTING
 	* STANDING
 	* WALKING
 	* WALKING_DOWNSTAIRS	
 	* WALKING_UPSTAIRS
+<br><br>
 
-time_BodyAcceleration_mean_X	- mean of body acceleration signal on x-axis (time domain)
+3. time_BodyAcceleration_mean_X	- mean of body acceleration signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAcceleration_mean_Y	- mean of body acceleration signal on y-axis (time domain)
+4. time_BodyAcceleration_mean_Y	- mean of body acceleration signal on y-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAcceleration_mean_Z	- mean of body acceleration signal on y-axis (time domain)
+5. time_BodyAcceleration_mean_Z	- mean of body acceleration signal on y-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAcceleration_std_X	- standard deviation of body acceleration signal on x-axis (time domain)
+6. time_BodyAcceleration_std_X	- standard deviation of body acceleration signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAcceleration_std_Y	- standard deviation of body acceleration signal on y-axis (time domain)
+7. time_BodyAcceleration_std_Y	- standard deviation of body acceleration signal on y-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAcceleration_std_Z	- standard deviation of body acceleration signal on y-axis (time domain)
+8. time_BodyAcceleration_std_Z	- standard deviation of body acceleration signal on y-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_GravityAcceleration_mean_X	- mean of gravity acceleration signal on x-axis (time domain)
+9. time_GravityAcceleration_mean_X	- mean of gravity acceleration signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_GravityAcceleration_mean_Y	- mean of gravity acceleration signal on y-axis (time domain)
+10. time_GravityAcceleration_mean_Y	- mean of gravity acceleration signal on y-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_GravityAcceleration_mean_Z	- mean of gravity acceleration signal on z-axis (time domain)
+11. time_GravityAcceleration_mean_Z	- mean of gravity acceleration signal on z-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_GravityAcceleration_std_X	- standard deviation of gravity acceleration signal on x-axis (time domain)
+12. time_GravityAcceleration_std_X	- standard deviation of gravity acceleration signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_GravityAcceleration_std_Y	- standard deviation of gravity acceleration signal on y-axis (time domain)
+13. time_GravityAcceleration_std_Y	- standard deviation of gravity acceleration signal on y-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_GravityAcceleration_std_Z	- standard deviation of gravity acceleration signal on z-axis (time domain)
+14. time_GravityAcceleration_std_Z	- standard deviation of gravity acceleration signal on z-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAccelerationJerk_mean_X	- mean of body acceleration jerk signal on x-axis (time domain)
+15. time_BodyAccelerationJerk_mean_X	- mean of body acceleration jerk signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAccelerationJerk_mean_Y	- mean of body acceleration jerk signal on y-axis (time domain)
+16. time_BodyAccelerationJerk_mean_Y	- mean of body acceleration jerk signal on y-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAccelerationJerk_mean_Z	- mean of body acceleration jerk signal on z-axis (time domain)
+17. time_BodyAccelerationJerk_mean_Z	- mean of body acceleration jerk signal on z-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAccelerationJerk_std_X	- standard deviation of body acceleration jerk signal on x-axis (time domain)
+18. time_BodyAccelerationJerk_std_X	- standard deviation of body acceleration jerk signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAccelerationJerk_std_Y	- standard deviation of body acceleration jerk signal on y-axis (time domain)
+19. time_BodyAccelerationJerk_std_Y	- standard deviation of body acceleration jerk signal on y-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAccelerationJerk_std_Z	- standard deviation of body acceleration jerk signal on z-axis (time domain)
+20. time_BodyAccelerationJerk_std_Z	- standard deviation of body acceleration jerk signal on z-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyro_mean_X - mean of body gyroscope signal on x-axis (time domain)
+21. time_BodyGyro_mean_X - mean of body gyroscope signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyro_mean_Y - mean of body gyroscope signal on y-axis (time domain)
+22. time_BodyGyro_mean_Y - mean of body gyroscope signal on y-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyro_mean_Z - mean of body gyroscope signal on z-axis (time domain)
+23. time_BodyGyro_mean_Z - mean of body gyroscope signal on z-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyro_std_X - standard deviation of body gyroscope signal on x-axis (time domain)
+24. time_BodyGyro_std_X - standard deviation of body gyroscope signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyro_std_Y - standard deviation of body gyroscope signal on y-axis (time domain)
+25. time_BodyGyro_std_Y - standard deviation of body gyroscope signal on y-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyro_std_Z - standard deviation of body gyroscope signal on z-axis (time domain)
+26. time_BodyGyro_std_Z - standard deviation of body gyroscope signal on z-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyroJerk_mean_X - mean of body gyroscope jerk signal on x-axis (time domain)
+27. time_BodyGyroJerk_mean_X - mean of body gyroscope jerk signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyroJerk_mean_Y - mean of body gyroscope jerk signal on x-axis (time domain)
+28. time_BodyGyroJerk_mean_Y - mean of body gyroscope jerk signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyroJerk_mean_Z - mean of body gyroscope jerk signal on x-axis (time domain)
+29. time_BodyGyroJerk_mean_Z - mean of body gyroscope jerk signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyroJerk_std_X - standard deviation of body gyroscope jerk signal on x-axis (time domain)
+30. time_BodyGyroJerk_std_X - standard deviation of body gyroscope jerk signal on x-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyroJerk_std_Y - standard deviation of body gyroscope jerk signal on y-axis (time domain)
+31. time_BodyGyroJerk_std_Y - standard deviation of body gyroscope jerk signal on y-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyroJerk_std_Z - standard deviation of body gyroscope jerk signal on z-axis (time domain)
+32. time_BodyGyroJerk_std_Z - standard deviation of body gyroscope jerk signal on z-axis (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAccelerationMagnitude_mean - mean of body acceleration magnitude signal(time domain)
+33. time_BodyAccelerationMagnitude_mean - mean of body acceleration magnitude signal(time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAccelerationMagnitude_std - standard deviation of body acceleration magnitude (time domain)
+34. time_BodyAccelerationMagnitude_std - standard deviation of body acceleration magnitude (time domain)
 	* continuous variable
+<br><br>
 
-time_GravityAccelerationMagnitude_mean - mean of gravity acceleration magnitude (time domain)
+35. time_GravityAccelerationMagnitude_mean - mean of gravity acceleration magnitude (time domain)
 	* continuous variable
+<br><br>
 
-time_GravityAccelerationMagnitude_std - standard deviation of gravity acceleration magnitude (time domain)
+36. time_GravityAccelerationMagnitude_std - standard deviation of gravity acceleration magnitude (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAccelerationJerkMagnitude_mean - mean of body acceleration jerk magnitude (time domain)
+37. time_BodyAccelerationJerkMagnitude_mean - mean of body acceleration jerk magnitude (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyAccelerationJerkMagnitude_std - standard deviation of body acceleration jerk magnitude (time domain)
+38. time_BodyAccelerationJerkMagnitude_std - standard deviation of body acceleration jerk magnitude (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyroMagnitude_mean - mean of body gyroscope magnitude (time domain)
+39. time_BodyGyroMagnitude_mean - mean of body gyroscope magnitude (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyroMagnitude_std - standard deviation of body gyroscope magnitude (time domain)
+40. time_BodyGyroMagnitude_std - standard deviation of body gyroscope magnitude (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyroJerkMagnitude_mean - mean of body gyroscope jerk magnitude (time domain)
+41. time_BodyGyroJerkMagnitude_mean - mean of body gyroscope jerk magnitude (time domain)
 	* continuous variable
+<br><br>
 
-time_BodyGyroJerkMagnitude_std - standard deviation of body gyroscope jerk magnitude (time domain)
+42. time_BodyGyroJerkMagnitude_std - standard deviation of body gyroscope jerk magnitude (time domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAcceleration_mean_X - mean of body acceleration signal on x-axis (frequency domain)
+43. freq_BodyAcceleration_mean_X - mean of body acceleration signal on x-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAcceleration_mean_Y - mean of body acceleration signal on y-axis (frequency domain)
+44. freq_BodyAcceleration_mean_Y - mean of body acceleration signal on y-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAcceleration_mean_Z - mean of body acceleration signal on z-axis (frequency domain)
+45. freq_BodyAcceleration_mean_Z - mean of body acceleration signal on z-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAcceleration_std_X - standard deviation of body acceleration signal on x-axis (frequency domain)
+46. freq_BodyAcceleration_std_X - standard deviation of body acceleration signal on x-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAcceleration_std_Y - standard deviation of body acceleration signal on y-axis (frequency domain)
+47. freq_BodyAcceleration_std_Y - standard deviation of body acceleration signal on y-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAcceleration_std_Z - standard deviation of body acceleration signal on z-axis (frequency domain)
+48. freq_BodyAcceleration_std_Z - standard deviation of body acceleration signal on z-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAccelerationJerk_mean_X - mean of body accelaration jerk signal on x-axis (frequency domain)
+49. freq_BodyAccelerationJerk_mean_X - mean of body acceleration jerk signal on x-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAccelerationJerk_mean_Y - mean of body accelaration jerk signal on y-axis (frequency domain)
+50. freq_BodyAccelerationJerk_mean_Y - mean of body acceleration jerk signal on y-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAccelerationJerk_mean_Z - mean of body accelaration jerk signal on z-axis (frequency domain)
+51. freq_BodyAccelerationJerk_mean_Z - mean of body acceleration jerk signal on z-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAccelerationJerk_std_X - standard deviation of body accelaration jerk signal on x-axis (frequency domain)
+52. freq_BodyAccelerationJerk_std_X - standard deviation of body acceleration jerk signal on x-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAccelerationJerk_std_Y - standard deviation of body accelaration jerk signal on y-axis (frequency domain)
+53. freq_BodyAccelerationJerk_std_Y - standard deviation of body acceleration jerk signal on y-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAccelerationJerk_std_Z - standard deviation of body accelaration jerk signal on z-axis (frequency domain)
+54. freq_BodyAccelerationJerk_std_Z - standard deviation of body acceleration jerk signal on z-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyGyro_mean_X - mean of body gyroscope signal on x-axis (frequency domain)
+55. freq_BodyGyro_mean_X - mean of body gyroscope signal on x-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyGyro_mean_Y - mean of body gyroscope signal on y-axis (frequency domain)
+56. freq_BodyGyro_mean_Y - mean of body gyroscope signal on y-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyGyro_mean_Z - mean of body gyroscope signal on z-axis (frequency domain)
+57. freq_BodyGyro_mean_Z - mean of body gyroscope signal on z-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyGyro_std_X - standard deviation of body gyroscope signal on x-axis (frequency domain)
+58. freq_BodyGyro_std_X - standard deviation of body gyroscope signal on x-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyGyro_std_Y - standard deviation of body gyroscope signal on y-axis (frequency domain)
+59. freq_BodyGyro_std_Y - standard deviation of body gyroscope signal on y-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyGyro_std_Z - standard deviation of body gyroscope signal on z-axis (frequency domain)
+60. freq_BodyGyro_std_Z - standard deviation of body gyroscope signal on z-axis (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAccelerationMagnitude_mean - mean of body accelaration magnitude (frequency domain)
+61. freq_BodyAccelerationMagnitude_mean - mean of body acceleration magnitude (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAccelerationMagnitude_std - standard deviation of body accelaration magnitude (frequency domain)
+62. freq_BodyAccelerationMagnitude_std - standard deviation of body accelaration magnitude (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAccelerationJerkMagnitude_mean - mean of body accelaration jerg magnitude (frequency domain)
+63. freq_BodyAccelerationJerkMagnitude_mean - mean of body acceleration jerk magnitude (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyAccelerationJerkMagnitude_std - standard deviation of body accelaration jerg magnitude (frequency domain)
+64. freq_BodyAccelerationJerkMagnitude_std - standard deviation of body accelaration jerk magnitude (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyGyroMagnitude_mean - mean of body gyroscope magnitude (frequency domain)
+65. freq_BodyGyroMagnitude_mean - mean of body gyroscope magnitude (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyGyroMagnitude_std - standard deviation of body gyroscope magnitude (frequency domain)
+66. freq_BodyGyroMagnitude_std - standard deviation of body gyroscope magnitude (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyGyroJerkMagnitude_mean - mean of body gyroscope jerk magnitude (frequency domain)
+67. freq_BodyGyroJerkMagnitude_mean - mean of body gyroscope jerk magnitude (frequency domain)
 	* continuous variable
+<br><br>
 
-freq_BodyGyroJerkMagnitude_std - standard deviation of body gyroscope jerk magnitude (frequency domain)
+68. freq_BodyGyroJerkMagnitude_std - standard deviation of body gyroscope jerk magnitude (frequency domain)
 	* continuous variable
+<br><br>
