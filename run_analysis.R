@@ -1,3 +1,12 @@
+## The code does the following:
+## 1. Read train and test data sets 
+## 2. Merges train and test data sets
+## 3. Fetches columns with observation on the mean and the standard deviation
+## 4. Changes variable names with more descriptive
+## 5. Set descriptive activity names
+## 6. Creates new, tidy data set  with the average of each variable for each activity and each subject and saves it to output.txt
+
+
 #------------------------------------STEP 1: READ DATASETS---------------------------------------------------
 setwd("datasets")
 act_labels <- read.table("activity_labels.txt")
@@ -30,9 +39,10 @@ col_idx <- which(grepl("mean()", features[, 2], fixed = TRUE) | grepl("std()", f
 
 # --------- Merge the train and test datasets 
 m <- rbind(select(x_train, col_idx), select(x_test, col_idx)) # merge x observations
-col_names <- features[col_idx, 2] # set names
 
-# change column names to be more descriptive
+# extract column names and changed them with more descriptive
+col_names <- features[col_idx, 2]
+
 col_names <- gsub("-", "_", col_names)
 col_names <- gsub("mean()", "mean", col_names, fixed = TRUE)
 col_names <- gsub("std()", "std", col_names, fixed = TRUE)
@@ -60,4 +70,3 @@ m$activity <- act_labels[m$activity,2] # set descriptive names for the activitie
 sm <- m %>% group_by(subject_id, activity) %>% summarise_each(funs(mean)) # mean for each group of (subject_id) x (activity)
 write.table(sm, file = "output.txt", row.name = FALSE)
 
-# write.table(names(sm), file = "codebook_var.md", row.name = FALSE)

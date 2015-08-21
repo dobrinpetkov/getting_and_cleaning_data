@@ -1,6 +1,6 @@
 #Getting and Cleaning Data - Course Project
 
-## Basic structure of run_analysis.R
+### Basic structure of run_analysis.R
 
 The script assumes that there is folder **datasets** with the Samsung data in the working directory. Afterwards, the script follows the assignment requirements.
 
@@ -18,9 +18,11 @@ The datasets in **test/Inertial Signals/** and **train/Inertial Signals/** are n
 
 2. Steps 2 - extracting measurements on the mean and standard deviation, merging the test and train datasets and naming the variables with more descriptive names. 
 Here I have assumed that by measurements on the mean and standard deviation for each measurement it is meant columns that contain one of the strigns **mean()** or **std()**. 
-For example, that implies that *fBodyAcc-mean()-X* is included and *fBodyAcc-meanFreq()-X* is not as the latteris *weighted* average of the frequency components.
+For example, that implies that *fBodyAcc-mean()-X* is included and *fBodyAcc-meanFreq()-X* is not as the latter is *weighted* average of the frequency components.
+Merging is done via rbind() because it is simple and it does not reorder the rows.
 
-3. Step 3 is done next which is adding descriptive activity names to name the activities in the dataset.
+3. Step 3, which is adding descriptive activity names to name the activities in the dataset, is done next.
 
-4. The last step is creating new tidy data set with the average of each variable for each activity and each subject and saving that data set in output.txt.
+4. The last step is creating new tidy data set with the average of each variable for each activity and each subject, and saving that data set in output.txt.
+
  
